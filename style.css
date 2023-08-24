@@ -1,0 +1,302 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    --nav-background-color: #1a2456;
+    --text-color: #f0efed;
+    --orange-color: #ff8b68;
+    --black-color: #080b1b;
+    --text-secondary-color: #efc2b3;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: prompt, sans-serif;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--nav-background-color);
+    display: flex;
+    flex-direction: row;
+    color: var(--text-secondary-color);
+    align-items: center;
+    margin: 3em;
+    padding: 2em; 
+    z-index: 1000;
+}
+
+nav #logo {
+    color: var(--text-secondary-color);
+    margin-right: auto;
+}
+
+nav #logo:hover {
+    color: var(--orange-color);
+}
+
+nav div ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    align-items: center;
+}
+
+nav div ul li a {
+    display: block;
+    text-decoration: none;
+    color: var(--text-secondary-color);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    align-items: center;
+}
+
+nav div ul li a:hover {
+    color: var(--orange-color);
+}
+
+nav div ul li:nth-of-type(2) a:hover, nav div ul li:nth-child(8) a:hover {
+    color: var(--text-color);
+}
+
+nav div ul li a i {
+    font-size: 2rem;
+    vertical-align: center;
+}
+
+nav div ul li a span {
+    font-size: 1.5rem;
+    margin-right: 0.4em;
+}
+
+.welcome-section {
+    height: 100vh;
+    background: url(./Assets/shop_cta_xl_896f6b8270.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.welcome-section > div {
+    background: rgba(0 , 0, 0, 0.7);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome-section-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-secondary-color);
+}
+
+.welcome-section-header h1 {
+    font-size: 4rem;
+    margin: 0;
+    letter-spacing: 0.2em;
+}
+
+.welcome-section-header p {
+    font-size: 2rem;
+}
+
+.welcome-section a {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    font-size: 3rem;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.welcome-section a:hover {
+    font-size: 5rem;
+}
+
+.product-section-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 8em;
+    margin: 5% 10%;
+    color: var(--nav-background-color)
+}
+
+.tile {
+    position: relative;
+}
+
+.product-section-1 div a, .product-section-2 div a {
+    text-decoration: none;
+    color: var(--nav-background-color);
+}
+
+.product-section-1 div a img, .product-section-2 div a img {
+    width: 100%;
+}
+
+.product-section-1-tile {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-section-1-tile h2 {
+    font-size: 2rem;
+    padding: 0;
+    margin: 0;
+    color: var(--nav-background-color);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.product-section-1-tile p {
+    font-size: 1.2rem;
+    font-weight: lighter;
+    padding: 0;
+    margin: 0;
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+.pre-order {
+    position: absolute;
+    top: 8%;
+    right: 0;
+    font-size: 1.2rem;
+    background-color: var(--orange-color);
+    text-transform: uppercase;
+    padding: 0.5em;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+.shop-section {
+    background: url(./Assets/shop-banner-module.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    color: var(--nav-background-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.shop-section h1 {
+    font-size: 3.5rem;
+    letter-spacing: 0.1em;
+    padding: 0;
+    margin: 2em 0 0 0;
+}
+
+.shop-section p {
+    font-size: 2.5rem;
+    padding: 0;
+    margin: 0;
+}
+
+.product-section-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 8em;
+    margin: 5% 10%;
+    color: var(--nav-background-color)
+}
+
+footer {
+    background-color: var(--nav-background-color);
+    color: var(--text-secondary-color);
+    height: 40vh;
+}
+
+.footer-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: 10%;
+}
+
+.footer-wrapper section header {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin: 2em 0;
+}
+
+address {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.6rem;
+}
+
+.footer-wrapper section {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-wrapper a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: var(--text-secondary-color);
+}
+
+.footer-wrapper a:hover {
+    text-decoration: underline;
+}
+
+.footer-wrapper p {
+    font-size: 1.3rem;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-wrapper input {
+    padding: 0.5em;
+    font-size: 1.5rem;
+    background-color: var(--nav-background-color);
+    border: 0.01em solid var(--text-secondary-color);
+    outline:  none;
+    width: 65%;
+}
+
+.submit {
+    margin: 5em 0;
+}
+
+label {
+    background-color: var(--text-secondary-color);
+    border-radius: 10em;
+    color: var(--nav-background-color);
+    font-size: 1.2rem;
+    padding: 0.45em 1em;
+    margin-left: 1em;
+    font-weight: bold;
+}
+
+.socials {
+    display: flex;
+    gap: 10px;
+}
+
+
+.socials span i {
+    color: var(--text-secondary-color);
+    font-size: 4rem;
+    margin-bottom: 0.5em;
+}
+
+.footer-wrapper section:last-child div:last-child {
+    font-size: 1.2rem;
+}
