@@ -265,7 +265,7 @@ a:hover .image-wrapper img, a:hover .price span:last-of-type{
     height: 180vh;
 }
 
-.rollover {
+.rollover.width {
     width: 5vw;
 }
 
